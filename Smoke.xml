@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Smoke Suite">
+    <listeners>
+        <listener class-name="runThrghTestNG.TestInvocation"/>
+       
+    </listeners>cmd
+    <test name="LoginTests" preserve-order="true">
+        <classes>
+            <class name="runThrghTestNG.LoginPage"/>
+        </classes>
+    </test>
+    
+    
+    <test name="Functional Tests" preserve-order="true">
+        <classes>
+            <class name="runThrghTestNG.FunctionalTests"/>
+        </classes>
+    </test>
+    
+</suite>
