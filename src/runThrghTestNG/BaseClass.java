@@ -6,7 +6,7 @@ import java.util.*;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.android.AndroidDriver;
+//import org.openqa.selenium.android.AndroidDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -201,7 +201,7 @@ public class BaseClass {
                     // Utility.illegalStateException("Invalid OS paramter, expected values 'linux32||linux64||mac||win'");
                 }
                 System.out.println("Opening Android Browser");
-                driver = new AndroidDriver("http://192.168.1.3:8080/wd/hub");  //change the ip of android device
+             //   driver = new AndroidDriver("http://192.168.1.3:8080/wd/hub");  //change the ip of android device
 
                 Reporter.log("Browser: android");
                     //driver.manage().window().maximize();  //not compatible with android
